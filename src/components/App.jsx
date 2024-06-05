@@ -29,7 +29,7 @@ export const App = () => {
         <Route path="/goit-react-hw-08-phonebook" element={<Layout />}>
           <Route index element={<Home />} />
           <Route
-            path="register"
+            path="/goit-react-hw-08-phonebook/register"
             element={
               <PrivateRoute
                 Component={<RegisterForm />}
@@ -38,7 +38,7 @@ export const App = () => {
             }
           />
           <Route
-            path="login"
+            path="/goit-react-hw-08-phonebook/login"
             element={
               <PrivateRoute
                 Component={<Login />}
@@ -47,7 +47,7 @@ export const App = () => {
             }
           />
           <Route
-            path="contacts"
+            path="/goit-react-hw-08-phonebook/contacts"
             element={
               <ProtectedRoute
                 Component={<ContactsList />}
