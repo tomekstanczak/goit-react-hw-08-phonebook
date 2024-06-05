@@ -6,7 +6,7 @@ export const Navigation = () => {
   const { isLoggedIn } = useAuth();
   return (
     <nav className={css.navStyle}>
-      <NavLink to="/">Home</NavLink>
+      <NavLink to="/goit-react-hw-08-phonebook">Home</NavLink>
       {isLoggedIn && <NavLink to="/contacts">Contacts</NavLink>}
       {!isLoggedIn && (
         <>

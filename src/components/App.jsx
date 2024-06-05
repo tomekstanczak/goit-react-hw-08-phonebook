@@ -33,26 +33,20 @@ export const App = () => {
             element={
               <PrivateRoute
                 Component={<RegisterForm />}
-                redirecTo="/goit-react-hw-08-phonebook/contacts"
+                redirecTo="/contacts"
               />
             }
           />
           <Route
             path="login"
             element={
-              <PrivateRoute
-                Component={<Login />}
-                redirecTo="/goit-react-hw-08-phonebook/contacts"
-              />
+              <PrivateRoute Component={<Login />} redirecTo="/contacts" />
             }
           />
           <Route
             path="contacts"
             element={
-              <ProtectedRoute
-                Component={<ContactsList />}
-                redirecTo="/goit-react-hw-08-phonebook/login"
-              />
+              <ProtectedRoute Component={<ContactsList />} redirecTo="/login" />
             }
           />
         </Route>
