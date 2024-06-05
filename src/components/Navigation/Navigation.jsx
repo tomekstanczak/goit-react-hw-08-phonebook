@@ -10,8 +10,8 @@ export const Navigation = () => {
       {isLoggedIn && <NavLink to="/contacts">Contacts</NavLink>}
       {!isLoggedIn && (
         <>
-          <NavLink to="/register">Register</NavLink>
-          <NavLink to="/login">Log in</NavLink>
+          <NavLink to="/goit-react-hw-08-phonebook/register">Register</NavLink>
+          <NavLink to="/goit-react-hw-08-phonebook/login">Log in</NavLink>
         </>
       )}
     </nav>
