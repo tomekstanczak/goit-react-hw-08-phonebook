@@ -26,7 +26,7 @@ export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/goit-react-hw-08-phonebook " element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route
             path="register"
