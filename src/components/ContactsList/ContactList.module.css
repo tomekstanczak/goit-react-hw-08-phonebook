@@ -1,0 +1,37 @@
+.contactList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contactsBox {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+.contactStyle {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: 60px;
+}
+.hTextStyle {
+  margin: 0;
+  margin-top: 19px;
+}
+
+.contactButton {
+  position: absolute;
+  top: 140px;
+  left: 36px;
+  background-color: silver;
+  width: 120px;
+  height: 40px;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  box-shadow: inset 2px 2px 5px rgba(94, 94, 94, 0.877);
+  z-index: 1;
+}

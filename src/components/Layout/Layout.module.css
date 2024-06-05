@@ -1,0 +1,107 @@
+.shape {
+  width: 270px;
+  height: 550px;
+  background: linear-gradient(to bottom, #024269, #013a4d);
+  border-radius: 50px / 300px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.insideBorder {
+  position: absolute;
+  width: 210px;
+  height: 300px;
+  border: 15px solid whitesmoke;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-radius: 50px/200px;
+  border-bottom-left-radius: 50% 50px;
+  border-bottom-right-radius: 50% 50px;
+  box-shadow: inset 2px 4px 0px gray, inset -2px -4px 0px gray, 2px 2px 2px gray,
+    -2px -2px 2px gray;
+}
+
+h1 {
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 1.44px;
+}
+
+.screen {
+  width: 190px;
+  height: 190px;
+  background-color: rgb(0, 189, 116);
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.buttonContact {
+  position: absolute;
+  top: 280px;
+  left: 1px;
+  background-color: silver;
+  border-bottom-left-radius: 87%;
+  border-top-right-radius: 60%;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  width: 65px;
+  height: 50px;
+  margin-left: 12px;
+  box-shadow: inset 2px 2px 5px rgba(94, 94, 94, 0.877);
+  z-index: 0;
+}
+
+.buttonDelete {
+  position: absolute;
+  top: 298px;
+  left: 76px;
+  background-color: silver;
+  width: 120px;
+  height: 40px;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  box-shadow: inset 2px 2px 5px rgba(94, 94, 94, 0.877);
+  z-index: 0;
+}
+.buttonPaginationOne {
+  position: absolute;
+  top: 286px;
+  left: 225px;
+  background-color: silver;
+  width: 32px;
+  height: 35px;
+
+  box-shadow: inset 2px 2px 5px rgba(94, 94, 94, 0.877);
+  border-bottom-right-radius: 90%;
+  z-index: 0;
+}
+.buttonPaginationTwo {
+  position: absolute;
+  top: 286px;
+  left: 193px;
+  background-color: silver;
+  width: 32px;
+  height: 35px;
+
+  box-shadow: inset 2px 2px 5px rgba(94, 94, 94, 0.877);
+  border-top-left-radius: 75%;
+  z-index: 0;
+}
+
+.buttonLogOut {
+  position: absolute;
+  top: 283px;
+  left: 80px;
+  background-color: silver;
+  border-radius: 30%;
+  width: 110px;
+  height: 18px;
+  box-shadow: inset 2px 2px 5px rgba(94, 94, 94, 0.877);
+  z-index: 0;
+}

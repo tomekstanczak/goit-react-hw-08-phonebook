@@ -1,0 +1,20 @@
+.paginationList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 111px;
+  left: 153px;
+  border-bottom-right-radius: 90%;
+  border-top-left-radius: 75%;
+  overflow: hidden;
+  z-index: 1;
+}
+.paginationList button {
+  background-color: silver;
+  width: 32px;
+  height: 35px;
+  padding-bottom: 6px;
+  box-shadow: inset 2px 2px 5px rgba(94, 94, 94, 0.877);
+  z-index: 1;
+}
