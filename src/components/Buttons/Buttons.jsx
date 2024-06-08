@@ -6,7 +6,7 @@ export const Buttons = () => {
 
   useEffect(() => {
     const handleKeyPress = e => {
-      const key = e.key.toLowerCase();
+      const key = e.key;
       const mapping = {
         1: ['a', 'b', 'c', '1'],
         2: ['d', 'e', 'f', '2'],

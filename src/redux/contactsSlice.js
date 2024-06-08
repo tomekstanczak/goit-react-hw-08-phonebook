@@ -51,12 +51,13 @@ const contactsSlice = createSlice({
       .addCase(deleteContactInApi.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.items = state.items
-          .filter(contact => contact.id !== action.payload)
-          .addCase(deleteContactInApi.rejected, (state, action) => {
-            state.isLoading = false;
-            state.error = action.payload;
-          });
+        state.items = state.items.filter(
+          contact => contact.id !== action.payload.id
+        );
+      })
+      .addCase(deleteContactInApi.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.payload;
       });
   },
 });

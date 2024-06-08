@@ -30,8 +30,7 @@ const deleteContactInApi = createAsyncThunk(
   'contacts/deleteContact',
   async (deletedContact, thunkApi) => {
     try {
-      const response = await axios.delete(`/contacts/${deletedContact}
-    }`);
+      const response = await axios.delete(`contacts/${deletedContact}`);
       console.log(response);
       return response.data;
     } catch (error) {
@@ -39,14 +38,5 @@ const deleteContactInApi = createAsyncThunk(
     }
   }
 );
-
-// const editConcactInApi = createAsyncThunk(
-//   'contacts/editContact',
-//   async (deletedContact, thunkApi) => {
-//     try {
-//       const response = await axios.
-//     }
-//   }
-// )
 
 export { getContactsFromApi, addContactInApi, deleteContactInApi };
